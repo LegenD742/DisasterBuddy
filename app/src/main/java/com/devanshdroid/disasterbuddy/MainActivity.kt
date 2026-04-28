@@ -13,7 +13,6 @@ import com.devanshdroid.disasterbuddy.navigation.Screen
 import com.devanshdroid.disasterbuddy.ui.theme.DisasterBuddyTheme
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
-import com.devanshdroid.disasterbuddy.presentation.dashboard.screens.DashboardScreen
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -30,11 +29,11 @@ class MainActivity : ComponentActivity() {
             ) {
                 DisasterBuddyTheme {
                     val navController = rememberNavController()
-                    val startDestination = Screen.CreateHelpRequest.route
-//                    val startDestination = if (preferenceManager.isLoggedIn())
-//                        Screen.Dashboard.route
-//                    else
-//                        Screen.Login.route
+                    //val startDestination = Screen.CreateHelpRequest.route
+                    val startDestination = if (preferenceManager.isLoggedIn())
+                        Screen.Dashboard.route
+                    else
+                        Screen.Login.route
 
                     AppNavGraph(
                         navController = navController,

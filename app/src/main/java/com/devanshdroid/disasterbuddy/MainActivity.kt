@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
             ) {
                 DisasterBuddyTheme {
                     val navController = rememberNavController()
-                    val startDestination = Screen.Dashboard.route
+                    val startDestination = Screen.CreateHelpRequest.route
 //                    val startDestination = if (preferenceManager.isLoggedIn())
 //                        Screen.Dashboard.route
 //                    else

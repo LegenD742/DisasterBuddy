@@ -4,9 +4,9 @@ package com.devanshdroid.disasterbuddy.core.utils
 object Constants {
 
     // --- Backend Base URLs (replace with your Render URLs after deployment) ---
-    const val AUTH_BASE_URL = "https://your-auth-service.onrender.com/"
-    const val ALERT_BASE_URL = "https://your-alert-service.onrender.com/"
-    const val HELP_REQUEST_BASE_URL = "https://your-helprequest-service.onrender.com/"
+    const val AUTH_BASE_URL = "http://10.18.203.197:3001/"
+    const val ALERT_BASE_URL = "http://10.18.203.197:3002/"
+    const val HELP_REQUEST_BASE_URL = "http://10.18.203.197:3003/"
 
     // --- Shared Preference Keys ---
     const val PREF_NAME = "disaster_buddy_prefs"
